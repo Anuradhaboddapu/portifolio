@@ -1075,7 +1075,7 @@ span {
     .home .profession-container .overlay {
         right: 0;
         left: 50%;
-        top: 50rem;
+        top: 60rem;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 22rem;
         position: fixed;
