@@ -991,6 +991,112 @@ span {
 }
 } 
 
+/* head section 480px */
+@media (max-width:480px) {
+    #darkMode-icon {
+        position: absolute;
+        right: 4rem;
+        font-size: 2.4rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.8rem 2%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .4rem 0.8rem rgba(0,0,0,.1);
+        display: none;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.8rem;
+        margin: 2rem 0;
+        color: var(--text-color);
+    }
+    .home {
+        padding: 0;
+        top: 0;
+        justify-content: center;
+        text-align: center;   
+    }
+    #menu-icon {
+        display: inline;
+    }
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    .home-content .social-media a {
+        margin: 1.2rem .6rem 0.8rem;
+    }
+    .home .profession-container {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    .home .profession-container .profession-box {
+        position: fixed;
+        top: 65%;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .home .profession-box .profession {
+        padding: 0 10px;
+        left: auto;
+        transform-origin: 0;
+    }
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-100px, -190px);
+    }
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(-0px, -300px);
+    }
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-100px, -400px);
+    }
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-200px, -300px);
+    }
+    .home .profession-box .circle {
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: -1;
+    }
+    .home .profession-container .overlay {
+        right: 0;
+        left: 50%;
+        top: 60rem;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 22rem;
+        position: fixed;
+        z-index: 1;
+    }
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        background-color: var(--white-color);
+    }
+    .about-content h2 {
+        margin-top: 18px;
+        text-align: center;
+    }
+    .about-img img {
+        width: 80vw;
+    }
+}
+
  
 
 /* education media */
@@ -1043,6 +1149,7 @@ span {
 @media (max-width: 768px) {
     .education {
         padding: 15px 10px;
+        font-size: small;
     }
     
     .timeline-items {
@@ -1102,6 +1209,10 @@ span {
     .footer-test p {
         font-size: 2rem;
     }
+    .dark-mode .about {
+        background-color: #0b061f; /* Darker background for About section on mobile */
+    }
+
 }
 
 /* For mobile screens (480px and below) */
@@ -1134,7 +1245,51 @@ span {
     .footer-test p {
         font-size: 1.6rem;
     }
+    .dark-mode .about {
+        background-color: #0b061f; /* Darker background for About section on mobile */
+    }
+
 }
 
 
 
+@media (max-width: 480px) {
+    .education {
+        padding: 10px 5px;
+        font-size: smaller;
+    }
+    
+    .timeline-items {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding: 8px 0;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        text-align: center;
+        left: 0;
+    }
+    
+    .timeline-items::before {
+        display: none;
+    }
+    
+    .timeline-item-content {
+        padding: 5px 5px;
+        font-size: 0.1rem;
+        line-height: 1.4;
+        background-color: var(--bg-color); /* Adjust background color if needed */
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .timeline-content p {
+        margin: 2px 0;
+        font-size:0%;
+    }
+}
