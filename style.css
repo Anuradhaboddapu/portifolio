@@ -1068,14 +1068,14 @@ span {
     }
     .home .profession-box .circle {
         position: fixed;
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
         z-index: -1;
     }
     .home .profession-container .overlay {
         right: 0;
         left: 50%;
-        top: 60rem;
+        top: 50rem;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 22rem;
         position: fixed;
